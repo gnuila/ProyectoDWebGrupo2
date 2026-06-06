@@ -3,6 +3,7 @@
 :root{
 	--color-amarillo:#F4BC1C;
 	--color-rojo:#CE0004;
+	--rojo-botones:#680001;
 }
 body{
 	font-family: "Outfit", sans-serif;
@@ -13,9 +14,11 @@ body{
 header{
 	background-color: #000;
 	padding: 15px 5%;
-	position: fixed;
-	width: 100%;
-	z-index: 100;
+	position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000
 }
 
 header li{
@@ -33,12 +36,14 @@ header li{
 }
 
 #hero{
-	
-	height: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+	background-blend-mode: darken;
+	background-color: rgba(0,0,0,0.40);
+	height: 100%;
+	text-align: center;
+	padding-bottom: 10%;
 	
 }
 .fondo-home{
@@ -46,51 +51,20 @@ header li{
 }
 
 .fondo-biografia{
-	background-image: url("../img/gustavo-biografia.jpg");
-	background-size: cover;
-	background-position: top center;
-	height: 800px;
+	background-image: url("../img/hero-biografia.jpg");
 }
 
-h1{
-	text-align: center;
-	margin-top: 110px;
-	font-size: 50px;
-	text-shadow: 3px 3px 10px rgba(0,0,0,0.8);
-}
-.nacio{
-	color: #F4BC1C;
-	text-align: center;
-}
-
-.row{
-	align-items: center;
-}
-
-#biografiasoda1{
-	background-color: var(--color-amarillo);
-	color: black;
-	font-weight: 600;
-	padding-left: 20px;
-}
-
-#biografiasoda2{
-	background-color: var(--color-amarillo);
-	color: black;
-	font-weight: 600;
-	padding: 20px 0;
-}
-
-#biografiasoda2 h4{
-	font-weight: 800;
-	padding-left: 100px;
+.fondo-ecos{
+	background-image: url("../img/hero-ecos.jpg");
+	aspect-ratio: 2 / 1;
 }
 
 .titulo{
-	font-size: 48px;
+	font-size: 64px;
 	margin-top: 42%;
 	font-weight: 600;
-	text-shadow: 10px 10px 25px #313131;	
+	text-shadow: 10px 10px 25px #212121;
+	letter-spacing: 0.02em;
 }
 
 .section{
@@ -100,7 +74,7 @@ h1{
 
 #ecos img{
 	display: block;
-	margin: auto;
+	margin: 0 auto;
 }
 
 
@@ -190,11 +164,18 @@ footer p{
 .btn-secondary{
 	border-radius: 40px;
 	border: 0;
-	padding: 15px 50px;
-	margin-top: 15%;
+	padding: 20px 10%;
 	background-color: var(--color-rojo);
 	text-transform: uppercase;
 	font-weight: 600;
+}
+
+.btn-secondary:hover{
+	background-color: var(--rojo-botones);
+}
+
+.boton-home{
+	margin-top: 12%;
 }
 
 .btn-primary{
@@ -204,6 +185,80 @@ footer p{
 	margin-top: 10%;
 	border-radius: 40px;
 	border: 0;
-	padding: 15px 50px;
+	padding: 20px 10%;
 	background-color: var(--color-amarillo)
+}
+
+.btn-primary:hover{
+	background-color: #C58A0B;
+	color: #000;
+}
+
+.destacar{
+	color: var(--color-amarillo);
+	text-align: center;
+	margin-top: -5%;
+	letter-spacing: 0.1em;
+	font-weight: 600;
+	font-size: 24px;
+	padding: 3% 20% 0;
+}
+
+.bio-negro, .bio-amarillo{
+	padding: 5% 0;
+}
+
+.bio-negro p,
+.bio-amarillo p{
+	font-weight: 300;
+	line-height: 2;
+	font-size: 20px;
+	letter-spacing: 0.1em;
+}
+
+#bio-2{
+	background-color: var(--color-amarillo);
+	color: #000;
+}
+
+.bio-amarillo img{
+	border: 20px solid #000;
+}
+
+.bio-amarillo span{
+	font-weight: 700;
+	font-size: 30px;
+}
+
+#bio-2 h4{
+	font-weight: 700;
+	text-align: center;
+	font-size: 46px;
+	padding-top: 4%;
+}
+
+#ecos-info{
+	padding: 7% 17% 5%;
+	text-align: center;
+	font-weight: 300;
+	letter-spacing: 0.1em;
+	font-size: 18px;
+	line-height: 2;
+}
+
+#ecos-info h5{
+	text-align: center;
+	font-style: italic;
+	font-weight: 200;
+	letter-spacing: 0;
+	font-size: 18px;
+	padding-bottom: 25px;
+}
+
+.soda-late{
+	text-align: center;
+	letter-spacing: 0.1em;
+	font-weight: 700;
+	font-size: 32px;
+	padding: 2% 0;
 }
