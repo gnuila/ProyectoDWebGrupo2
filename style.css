@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+	--color-amarillo:#F4BC1C;
+	--color-rojo:#CE0004;
+}
+body{
+	font-family: "Outfit", sans-serif;
+	color: #FFF;
+	background-color: #000;
+}
+
+header{
+	background-color: #000;
+	padding: 15px 5%;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
+
+header li{
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	margin: 0 10px;
+}
+
+.navbar-brand{
+	margin-right: 0;
+}
+
+.navbar-nav{
+	align-items: center;
+}
+
+#hero{
+	
+	height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+	
+}
+.fondo-home{
+	background-image: url("../img/hero-home.jpg");
+}
+
+.fondo-biografia{
+	background-image: url("../img/gustavo-biografia.jpg");
+	background-size: cover;
+	background-position: top center;
+	height: 800px;
+}
+
+.fondo-ecos{
+	background-image: url("../img/soda-stereo-noticias.jpg");
+	background-size: cover;
+	background-position: top center;
+	height: 800px;
+}
+
+h1{
+	text-align: center;
+	margin-top: 110px;
+	font-size: 50px;
+	text-shadow: 3px 3px 10px rgba(0,0,0,0.8);
+}
+.nacio{
+	color: #F4BC1C;
+	text-align: center;
+}
+
+.row{
+	align-items: center;
+}
+
+#biografiasoda1{
+	background-color: var(--color-amarillo);
+	color: black;
+	font-weight: 600;
+	padding-left: 20px;
+}
+
+#biografiasoda2{
+	background-color: var(--color-amarillo);
+	color: black;
+	font-weight: 600;
+	padding: 20px 0;
+}
+
+#biografiasoda2 h4{
+	font-weight: 800;
+	padding-left: 100px;
+}
+
+.ecos-info{
+	padding: 0px 300px;
+	text-align: center;
+}
+
+
+.tickets{
+	text-align: center;
+	font-style: italic;
+	padding-top: 10px;
+	padding-bottom: 100px;
+}
+
+.titulo{
+	font-size: 48px;
+	margin-top: 42%;
+	font-weight: 600;
+	text-shadow: 10px 10px 25px #313131;	
+}
+
+.section{
+	background-color: #000000;
+	padding: 10% 0 50px;
+}
+
+#ecos img{
+	display: block;
+	margin: auto;
+}
+
+
+.subtitulo{
+	text-align: center;
+	padding-bottom: 80px;
+	font-size: 48px;
+}
+
+#explora-d h3{
+	text-align: center;
+	padding: 45px 0 15px;
+	font-size: 36px;
+}
+
+#explora-d h4{
+	text-align: center;
+	font-weight: 300;
+}
+
+#explora-d p{
+	text-align: center;
+	font-style: italic;
+	font-size: 24px;
+	padding: 10px 0 25px;
+	font-weight: 300;
+}
+
+#explora-n{
+	padding-bottom: 7%;
+}
+
+.cuadros{
+	background-color: var(--color-amarillo);
+	padding: 45px;
+	height: 95%;
+}
+
+.cuadros h3{
+	color: #000;
+	font-weight: 600;
+}
+
+.cuadros h4{
+	font-style: italic;
+	color: #707070;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.cuadros p{
+	color: #000;
+}
+
+.cuadros a{
+	text-decoration: none;
+}
+
+
+footer{
+	background-color: #111111;
+	text-align: center;
+	padding: 4% 0;
+	
+}
+
+.icono-footer{
+	color: #fff;
+	font-size: 20px;
+	padding: 0px 20px;
+	justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 24px;
+}
+
+footer p{
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+.boton{
+	text-align: center;
+}
+
+.btn-secondary{
+	border-radius: 40px;
+	border: 0;
+	padding: 15px 50px;
+	margin-top: 15%;
+	background-color: var(--color-rojo);
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.btn-primary{
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #000;
+	margin-top: 10%;
+	border-radius: 40px;
+	border: 0;
+	padding: 15px 50px;
+	background-color: var(--color-amarillo)
+}
