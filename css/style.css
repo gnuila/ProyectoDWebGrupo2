@@ -4,10 +4,11 @@
 	--color-amarillo:#F4BC1C;
 	--color-rojo:#CE0004;
 	--rojo-botones:#680001;
+	--gris-form:##B8B8B8
 }
 body{
 	font-family: "Outfit", sans-serif;
-	color: #FFF;
+	color: #fff;
 	background-color: #000;
 }
 
@@ -27,11 +28,11 @@ header li{
 	margin: 0 10px;
 }
 
-.navbar-brand{
+header .navbar-brand{
 	margin-right: 0;
 }
 
-.navbar-nav{
+header .navbar-nav{
 	align-items: center;
 }
 
@@ -65,6 +66,13 @@ header li{
 	font-weight: 600;
 	text-shadow: 10px 10px 25px #212121;
 	letter-spacing: 0.02em;
+}
+
+.titulo-alt{
+	font-size: 32px;
+	font-weight: 600;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
 }
 
 .section{
@@ -261,4 +269,20 @@ footer p{
 	font-weight: 700;
 	font-size: 32px;
 	padding: 2% 0;
+}
+
+#discografia li{
+	text-transform: uppercase;
+	padding-right: 40px;
+}
+
+#discografia .form-control{
+	border-radius: 0;
+	background-color: transparent;
+	text-align: end;
+	font-size: 18px;
+	color: #FFF;
+	font-weight: 300;
+	padding-right: 0
+	
 }
