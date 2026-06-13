@@ -4,7 +4,8 @@
 	--color-amarillo:#F4BC1C;
 	--color-rojo:#CE0004;
 	--rojo-botones:#680001;
-	--gris-form:##B8B8B8
+	--color-azul: #2B89DC;
+	--color-gris: #868686;
 }
 body{
 	font-family: "Outfit", sans-serif;
@@ -276,13 +277,90 @@ footer p{
 	padding-right: 40px;
 }
 
-#discografia .form-control{
-	border-radius: 0;
-	background-color: transparent;
-	text-align: end;
-	font-size: 18px;
-	color: #FFF;
-	font-weight: 300;
-	padding-right: 0
+.albumes{
+	letter-spacing: 1px;
+}
+
+.albumes h3{
+	color: var(--color-azul);
+	padding: 20px 0 0;
+	font-weight: 600;
+}
+
+.albumes p{
+	color: var(--color-gris);
+	font-style: italic;
+	font-weight: 200;
+}
+
+.albumes img{
+	opacity: 0.8;
 	
 }
+
+.albumes img:hover{
+	opacity: 1;
+}
+
+#boletin{
+	padding-top: 7%;
+	padding-bottom: 7%;
+}
+
+.registrate{
+	font-size: 24px;
+	font-weight: 300;
+	letter-spacing: 0.02em;
+}
+
+.aviso{
+	font-size: 12px;
+	font-weight: 200;
+}
+
+
+.formulario{
+	border-radius: 0;
+	border: 2px solid var(--color-gris);
+	background-color: transparent;
+	color: #fff;
+}
+
+.boton-f{
+	padding: 8px;
+	border: 2px solid var(--color-gris);
+	background-color: transparent;
+	color: #fff;
+}
+
+.boton-f:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+#nombre::placeholder {
+	color: var(--color-gris);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
