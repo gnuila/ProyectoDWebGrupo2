@@ -70,7 +70,7 @@ header .navbar-nav{
 }
 
 .titulo-alt{
-	font-size: 32px;
+	font-size: 60px;
 	font-weight: 600;
 	letter-spacing: 0.02em;
 	text-transform: uppercase;
@@ -218,7 +218,8 @@ footer p{
 }
 
 .bio-negro p,
-.bio-amarillo p{
+.bio-amarillo p,
+#ahivamos p{
 	font-weight: 300;
 	line-height: 2;
 	font-size: 20px;
@@ -342,10 +343,12 @@ footer p{
 	color: var(--color-gris);
 }
 
-
-
-
-
+.logros-cuadro{
+	padding: 15% 20%;
+	background-color: #fff;
+	text-align: center;
+	color: #000;
+}
 
 
 
