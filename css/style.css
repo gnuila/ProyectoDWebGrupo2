@@ -273,7 +273,8 @@ footer p{
 	padding: 2% 0;
 }
 
-#discografia li{
+#discografia li,
+#tienda li{
 	text-transform: uppercase;
 	padding-right: 40px;
 }
@@ -350,7 +351,15 @@ footer p{
 	color: #000;
 }
 
+.page-link{
+	background-color: transparent;
+	border: 0;
+}
 
+.pagination .page-item .disabled{
+	background-color: transparent;
+	border: 0;
+}
 
 
 

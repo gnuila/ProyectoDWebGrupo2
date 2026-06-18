@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Boletín Informativo - Gustavo Cerati</title>
+<title>Discografía - Gustavo Cerati</title>
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/bootstrap-custom.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet" >
 <link href="css/style.css" rel="stylesheet">
 	
-<meta name="Description" content="Página de boletín informativo oficial de Gustavo Cerati. Se presenta el registro para recibir antes que nadie noticias exclusivas, novedades de lanzamientos, ofertas y anuncios de Gustavo Cerati y su legado.">
-<meta name="Keywords" content="noticias Cerati, documental cerati, noticias soda stereo, videos soda stereo">
+<meta name="Description" content="Página de la tienda con vinilos, CDs y merch de toda la carrera de Gustavo Cerati, incluyendi Soda Stereo y su carrera solista.">
+<meta name="keywords" content="vinilos de cerati, albumes soda stereo, cd amor amarillo, vinilo bocanada, camisas soda stereo, camisa de cerati">
 </head>
 
 <body>
@@ -41,13 +41,13 @@
 		      </a>
 			  
 			  <li class="nav-item"> 
-				  <a class="nav-link" href="tienda-vinilos.html">Tienda</a>
+				  <a class="nav-link active" href="tienda-vinilos.html">Tienda</a>
 			  </li>
 			  <li class="nav-item"> 
 				  <a class="nav-link" href="#">Noticias</a> 
 			  </li>
 			  <li class="nav-item">
-				  <a class="nav-link active" href="boletin.html">Boletín</a> 
+				  <a class="nav-link" href="boletin.html">Boletín</a> 
 			  </li>
 			</ul>
 		  </div>
@@ -55,29 +55,51 @@
 	  </div>
 	</header>
 	
-	<section id="hero pb-0">
-		<img src="img/hero-boletin.jpg" alt="Mural en apoyo a Gustavo Cerati" class="img-fluid">
+	<section id="tienda" class="section pt-4">
+      <div class="container">
+		  <h1 class="titulo-alt">Tienda</h1>
+              <nav class="navbar navbar-expand-lg navbar-dark bg-transparent"> 
+
+                  <div id="sub-navbar">
+
+                    <ul class="navbar-nav me-auto mb-2 mt-2 mb-lg-0"> 
+                    <li class="nav-item">
+                    <a class="nav-link ps-0" href="tienda-vinilos.html">Vinilos</a> 
+                    </li>
+                    <li class="nav-item"> 
+                    <a class="nav-link ps-0" href="">Cds</a>
+                    </li>
+                    <li class="nav-item"> 
+                    <a class="nav-link active ps-0" aria-current="page" href="tienda-merch.html">Merch</a> 
+                    </li>
+                    </ul>
+					  
+				  </div>
+              </nav>
+      </div>
 	</section>
 	
-	<section id="boletin" class="section">
-		<div class="container text-start">
-            <h1 class="titulo-alt">Suscríbete al boletín informativo</h1>
-            <p class="registrate mt-3 mb-5">Regístrate para recibir noticias, ofertas y otras comunicaciones de marketing sobre Gustavo Cerati de parte de su familia, Soda Stereo, Sony Music y sus afiliados. Puedes darte de baja en cualquier momento.</p>
-            <form action="#" method="POST">
-              <input type="text" id="nombre" name="nombre" class="formulario p-2 mt-3 d-block" placeholder="Nombre" required>
-              <input type="email" id="email" name="email" placeholder="Ingresa tu correo" class="formulario p-2 mt-3" required>
-              <button type="submit" class="boton-f ">Suscríbete</button>
-              <div class="d-block mt-3">
-                  <input type="checkbox" id="aviso-privacidad" name="aviso-privacidad" required>
-                  <span class="checkbox-text">He leído y acepto el aviso de privacidad</span>
-              </div>
-            </form>
-		
-			
-			
-			<p class="aviso mt-5">Al enviar tu dirección de correo electrónico y hacer clic en 'suscríbete', estarás otorgando tu consentimiento para que Sony Music Entertainment y sus empresas afiliadas utilicen tu dirección de correo electrónico (incluyendo tu nombre) para enviarte el newsletter de Gustavo Cerati y otras comunicaciones de marketing directo por correo electrónico. Estas comunicaciones promocionarán conciertos, productos, películas, documentales, eventos, noticias y actualizaciones sobre Gustavo Cerati, sobre Soda Stereo, y sobre terceros cuidadosamente seleccionados, licenciatarios autorizados de su obra. Puedes retirar este consentimiento en cualquier momento. Si lo haces, no podremos enviarte ninguna de estas comunicaciones a menos que te vuelvas a suscribir. Tienes derechos en relación con la forma en que utilizamos tu información personal para este fin. Para obtener más detalles sobre todo esto, consulta nuestro aviso de privacidad.</p>
-		</div>
-	</section>
+	<nav aria-label="Page navigation example">
+		<ul class="pagination justify-content-center">
+			<li class="page-item disabled">
+				<a class="page-link">Anterior</a>
+			</li>
+			<li class="page-item">
+				<a class="page-link" href="#">1</a>
+			</li>
+			<li class="page-item">
+				<a class="page-link" href="#">2</a>
+			</li>
+			<li class="page-item">
+				<a class="page-link" href="#">3</a>
+			</li>
+			<li class="page-item">
+			<a class="page-link" href="#">Siguiente</a>
+			</li>
+		</ul>
+	</nav>
+	
+
 	
 	<footer>
 		<img src="img/logo-cerati-amarillo.svg" alt="Logo Gustavo Cerati" class="img-fluid" width="150px">
@@ -95,7 +117,7 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>	
-	
+
 	
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MCVSTYXTGQ"></script>
@@ -105,7 +127,8 @@
   gtag('js', new Date());
 
   gtag('config', 'G-MCVSTYXTGQ');
-</script>	
+</script>
+	
 	
 </body>
 </html>
