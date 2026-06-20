@@ -361,10 +361,64 @@ footer p{
 	border: 0;
 }
 
+#slides{
+	width: 100%;
+	margin-top: 30px;
+	
+}
 
+#slides .carousel-item{
+	height: 520px;
+	
+}
 
+.img-carrusel{
+	height: 520px;
+	object-fit: cover;
+	object-position: center top;
+	
+}
 
+.pagination{
+	margin-top: 30px;
+	
+}
 
+#carousel-soda .carousel-control-prev
+#carousel-soda .carousel-control-next{
+	top: 60%;
+	bottom: auto;
+	transform: translateY(-50%);
+	height: 50px;
+	width: 50px;
+		
+}
+
+#albumes-soda {
+	padding-top: 40px;
+	padding-bottom: 50px;
+}
+
+.album h3 {
+	color: var(--color-amarillo);
+	font-weight: 700;
+	font-size: 28px;
+	margin-top: 18px;
+	margin-bottom: 0;
+}
+
+.album h4 {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.album p {
+	color: var(--color-gris);
+	font-size: 16px;
+	font-weight: 300;
+}
 
 
 

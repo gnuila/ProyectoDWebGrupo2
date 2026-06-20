@@ -1,9 +1,9 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Discografía - Gustavo Cerati</title>
+<meta charset="UTF-8">
+<title>tienda-soda</title>
+
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/bootstrap-custom.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet" >
@@ -18,7 +18,8 @@
 	  <div class="container-fluid">
 		<nav class="navbar navbar-expand-lg navbar-dark bg-transparent"> 	
 		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> 
-			<span class="navbar-toggler-icon"></span> 
+			<span class="navbar-toggler-icon">
+			  </span> 
 		  </button>
 		  <a class="navbar-brand d-lg-none mx-auto pe-5" href="index.html">
 				<img src="img/logo-cerati-amarillo.svg" alt="Logo Gustavo Cerati" width="150px">
@@ -63,17 +64,17 @@
                   <div id="sub-navbar">
 
                     <ul class="navbar-nav me-auto mb-2 mt-2 mb-lg-0"> 
+                    <li class="nav-item"> 
+                    <a class="nav-link active ps-0" aria-current="page" href="tienda-soda.html">Soda Stereo</a>
+                    </li>
 					<li class="nav-item">
-    				<a class="nav-link ps-0" href="tienda-soda.html">Soda Stereo</a>
-  					</li>
-                    <li class="nav-item">
                     <a class="nav-link ps-0" href="tienda-vinilos.html">Vinilos</a> 
                     </li>
                     <li class="nav-item"> 
                     <a class="nav-link ps-0" href="">Cds</a>
                     </li>
                     <li class="nav-item"> 
-                    <a class="nav-link active ps-0" aria-current="page" href="tienda-merch.html">Merch</a> 
+                    <a class="nav-link ps-0" href="tienda-merch.html">Merch</a> 
                     </li>
                     </ul>
 					  
@@ -81,6 +82,86 @@
               </nav>
       </div>
 	</section>
+	
+	<section id="slides">
+	<div id="carousel-soda" class="carousel slide">
+  		<div class="carousel-inner">
+    		<div class="carousel-item active">
+     			 <img src="img/soda-slider-1.jpg" class="d-block w-100" alt="soda1">
+    		</div>
+    		<div class="carousel-item">
+      			<img src="img/soda-slider-2.jpeg" class="d-block w-100" alt="soda2">
+   			 </div>	
+  		
+		<div class="carousel-item">
+      			<img src="img/soda-slider-3.jpeg" class="d-block w-100" alt="soda3">
+   			 </div>	
+			</div>
+  		
+  		<button class="carousel-control-prev" type="button" data-bs-target="#carousel-soda" data-bs-slide="prev">
+    		<span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+    		<span class="visually-hidden">Previous</span>
+ 		</button>
+  		<button class="carousel-control-next" type="button" data-bs-target="#carousel-soda" data-bs-slide="next">
+    		<span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+    		<span class="visually-hidden">Next</span>
+  		</button>
+	</div>
+	</section>
+	
+	
+	<section id="albumes-soda" class="section">
+ 	<div class="container">
+
+    <div class="row">
+
+      <article class="col-lg-4 col-md-6 col-12 album">
+        <img src="img/cancion-animal-disco-estudio.jpg" class="img-fluid" alt="Canción Animal">
+        <h3>Canción Animal</h3>
+        <h4>Vinil - Soda Stereo</h4>
+        <p>$45.99</p>
+      </article>
+
+      <article class="col-lg-4 col-md-6 col-12 album">
+        <img src="img/doble-vida-disco-estudio.jpeg" class="img-fluid" alt="Doble Vida">
+        <h3>Doble Vida</h3>
+        <h4>Vinil - Soda Stereo</h4>
+        <p>$37.87</p>
+      </article>
+
+      <article class="col-lg-4 col-md-6 col-12 album">
+        <img src="img/soda-stereo-disco-estudio.jpeg" class="img-fluid" alt="Soda Stereo">
+        <h3>Soda Stereo</h3>
+        <h4>CD - Soda Stereo</h4>
+        <p>$18.90</p>
+      </article>
+
+      <article class="col-lg-4 col-md-6 col-12 album">
+        <img src="img/dynamo-disco-estudio.jpeg" class="img-fluid" alt="Dynamo">
+        <h3>Dynamo</h3>
+        <h4>Vinil - Soda Stereo</h4>
+        <p>$41.99</p>
+      </article>
+
+      <article class="col-lg-4 col-md-6 col-12 album">
+        <img src="img/sueno-stereo-disco-estudio.jpeg" class="img-fluid" alt="Sueño Stereo">
+        <h3>Sueño Stereo</h3>
+        <h4>CD - Soda Stereo</h4>
+        <p>$19.50</p>
+      </article>
+
+      <article class="col-lg-4 col-md-6 col-12 album">
+        <img src="img/signos-disco-estudio.jpeg" class="img-fluid" alt="Signos">
+        <h3>Signos</h3>
+        <h4>CD - Soda Stereo</h4>
+        <p>$19.94</p>
+      </article>
+
+    	</div>
+
+  		</div>
+	</section>
+	
 	
 	<nav aria-label="Page navigation example">
 		<ul class="pagination justify-content-center">
