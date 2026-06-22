@@ -6,6 +6,7 @@
 	--rojo-botones:#680001;
 	--color-azul: #2B89DC;
 	--color-gris: #868686;
+	--gris-oscuro:#4E4E4E;
 }
 body{
 	font-family: "Outfit", sans-serif;
@@ -81,7 +82,8 @@ header .navbar-nav{
 	padding: 10% 0 50px;
 }
 
-#ecos img{
+#ecos img,
+#ecos-2 img{
 	display: block;
 	margin: 0 auto;
 }
@@ -129,18 +131,15 @@ header .navbar-nav{
 
 .cuadros h4{
 	font-style: italic;
-	color: #707070;
+	color: var(--gris-oscuro);
 	font-size: 18px;
-	font-weight: 300;
+	font-weight: 500;
 }
 
 .cuadros p{
 	color: #000;
 }
 
-.cuadros a{
-	text-decoration: none;
-}
 
 
 footer{
@@ -345,10 +344,11 @@ footer p{
 }
 
 .logros-cuadro{
-	padding: 15% 20%;
+	padding: 0 20%;
 	background-color: #fff;
 	text-align: center;
 	color: #000;
+	height: 200px;
 }
 
 .page-link{
@@ -361,72 +361,334 @@ footer p{
 	border: 0;
 }
 
-#slides{
-	width: 100%;
-	margin-top: 30px;
-	
-}
-
-#slides .carousel-item{
-	height: 520px;
-	
-}
-
-.img-carrusel{
-	height: 520px;
-	object-fit: cover;
-	object-position: center top;
-	
-}
 
 .pagination{
 	margin-top: 30px;
 	
 }
 
-#carousel-soda .carousel-control-prev
-#carousel-soda .carousel-control-next{
-	top: 60%;
-	bottom: auto;
-	transform: translateY(-50%);
-	height: 50px;
-	width: 50px;
-		
-}
-
-#albumes-soda {
-	padding-top: 40px;
-	padding-bottom: 50px;
-}
-
-.album h3 {
+#albumes-soda.albumes h3,
+#libros.albumes h3,
+#camisas.albumes h3{
 	color: var(--color-amarillo);
-	font-weight: 700;
-	font-size: 28px;
-	margin-top: 18px;
-	margin-bottom: 0;
-}
-
-.album h4 {
-	color: #fff;
-	font-size: 20px;
+	padding: 20px 0 0;
 	font-weight: 600;
-	margin-bottom: 5px;
 }
 
-.album p {
-	color: var(--color-gris);
-	font-size: 16px;
-	font-weight: 300;
+#libros img,
+#camisas img{
+	height: 75%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.cuadros-noticias{
+	background-color: var(--color-amarillo);
+	padding: 45px;
+}
+
+.cuadros-noticias img{
+	aspect-ratio: 4 / 3;
+	object-fit: cover;
+	filter: brightness(80%);
+}
+
+.cuadros-noticias p,
+.cuadros-noticias-l p{
+	color: var(--gris-oscuro);
+	font-style: italic;
+	font-weight: 500;
+	margin-top: 20px;
+	font-size: 18px;
+}
+
+.cuadros-noticias h2,
+.cuadros-noticias-l h2{
+	color: #000;
+	font-weight: 700;
+}
+
+.cuadros-noticias h3,
+.cuadros-noticias-l h3{
+	color: #000;
+	font-weight: 400;
+	margin-top: 10px;
+	font-size: 18px;
+	letter-spacing: 1px;
+	
+}
+
+.cuadros-noticias-l{
+	padding: 45px;
+	background-color: var(--color-amarillo);
+	margin: 50px 0;
+}
+
+.cuadros-noticias-l img{
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+	filter: brightness(80%);
+}
+
+.cuadros-noticias:hover,
+.cuadros-noticias-l:hover,
+.cuadros:hover{
+	background-color: #FFC037;
+}
+
+#noticias a,
+#noticias a:hover,
+#explora-n a,
+#explora-n a:hover{
+    text-decoration: none !important;
+}
+
+#explora-d img{
+	opacity: 0.8;
+	
+}
+
+#explora-d img:hover{
+	opacity: 1;
 }
 
 
+@media (min-width:800px) and (max-width:1200px) {
+	
+	header .navbar-brand{
+		margin-bottom: 10px;
+	}
+	
+	.destacar{
+		margin-top: 0;
+		padding: 5%;
+	}
+	
+	.bio-negro .mt-5{
+		margin-top: -20px !important;
+	}
+	
+	.bio-negro .text-end,
+	.bio-negro .text-start,
+	.bio-amarillo .text-end,
+	.bio-amarillo .text-start{
+		text-align: center !important;
+	}
+	
+	.bio-negro p,
+	.bio-amarillo p{
+		text-align: center;
+		padding: 0 10%;
+	}
+	
+	.bio-negro .text-end img,
+	.bio-negro .text-start img,
+	.bio-amarillo .text-end img,
+	.bio-amarillo .text-start img{
+		margin: 40px 0;
+	}
+	
+	.rectangulo{
+		object-fit: cover;
+		width: 100%;
+		height: 500px;
+	}
+	
+	#ahivamos p{
+		padding-bottom: 5%;
+	}
+	
+	#boletin .titulo-alt{
+		font-size: 46px;
+		padding: 7% 0;
+	}
+	
+}
 
 
+@media (max-width:800px) {
+	
+	.titulo{
+		font-size: 40px;
+		padding: 0 45px;
+	}
+	
+	#ecos img{
+		margin: 20px auto;
+	}
+	
+	header .navbar-brand{
+		margin-bottom: 10px;
+	}
+	
+	.btn-secondary{
+		padding: 20px 5%;
+		font-size: 16px;
+	}
+	
+	.subtitulo{
+		font-size: 36px;
+	}
+	
+	#explora-d h3{
+		font-size: 26px;
+	}
+
+	#explora-d h4{
+		font-size: 22px;
+	}
+
+	#explora-d p{
+		font-size: 22px;
+	}	
+	
+	#explora-n .subtitulo{
+		padding-bottom: 25px;
+	}
+	
+	.cuadros{
+		padding: 25px;
+	}
+	
+	#ecos-2 img{
+		margin: 20px auto 0;
+	}
+	
+	#ecos-info{
+		padding: 0 10% 15%;
+	}
+	
+	.destacar{
+		margin-top: 0;
+		font-size: 20px;
+		padding: 10%;
+	}
+	
+	.bio-negro .mt-5{
+		margin-top: -20px !important;
+	}
+	
+	.bio-negro .text-end,
+	.bio-negro .text-start,
+	.bio-amarillo .text-end,
+	.bio-amarillo .text-start{
+		text-align: center !important;
+	}
+	
+	.bio-negro p,
+	.bio-amarillo p{
+		text-align: center;
+		padding: 0 10%;
+		font-size: 18px;
+	}
+	
+	.bio-negro .text-end img,
+	.bio-negro .text-start img,
+	.bio-amarillo .text-end img,
+	.bio-amarillo .text-start img{
+		margin: 40px 0;
+	}
+	
+	.bio-amarillo span{
+		font-size: 24px;
+	}
+	
+	#bio-2 h4{
+		font-size: 32px;
+	}
+	
+	.titulo-alt{
+		font-size: 36px;
+		text-align: center;
+	}
+	
+	#discografia nav,
+	#tienda nav{
+		justify-content: center;
+		text-align: center;
+		padding-right: 0 !important;
+	}
+	
+	#discografia .navbar-dark .navbar-nav .nav-link,
+	#tienda .navbar-dark .navbar-nav .nav-link {
+		padding: 5px 0px;
+	}
+	
+	#discografia li,
+	#tienda li{
+	text-transform: uppercase;
+	padding-right: 0;
+	}
+	
+	#albumes-estudio article,
+	#albumes-vivo article,
+	#albumes-soda article,
+	#libros article,
+	#camisas article,
+	#ahivamos article{
+		text-align: center;
+	}
+	
+	.albumes h3{
+	font-size: 30px;
+	margin: 25px 0;
+	}
+	
+	.albumes h4{
+	margin-top: -10px;
+	}
+	
+	.albumes h5{
+	margin-bottom: 15px;
+	}
+	
+	.carousel .carousel-item {
+  	height: 250px;
+	}
+	
+	.carousel-item img {
+    min-height: 250px;
+	}
+	
+	#slides,
+	#libros{
+		padding-top: 0 !important;
+	}
+	
+	#ahivamos h1{
+		padding: 10% 0 3% !important;
+	}
+	
+	#ahivamos .w-75{
+		width: 50% !important;
+	}
+	
+	#ahivamos .titulo-alt{
+		font-size: 44px !important;
+	}
+	
+	#ahivamos p{
+		padding-bottom: 10%;
+	}
+	
+	#boletin .titulo-alt{
+		font-size: 30px;
+		text-align: left;
+		padding: 7% 0;
+	}
+	
+	.registrate{
+		font-size: 20px;
+	}
+	
+	.aviso{
+		font-size: 15px;
+	}
+	
+	footer{
+		margin-top: 10%;
+		padding: 15% 0;
+	}
 
 
-
-
-
-
-
+}
